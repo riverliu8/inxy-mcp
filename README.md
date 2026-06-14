@@ -6,16 +6,15 @@ A remote [Model Context Protocol](https://modelcontextprotocol.io) server that l
 
 - **Endpoint:** `https://inxy.ai/api/mcp` (Streamable HTTP)
 - **Docs / setup:** https://inxy.ai/mcp
-- **Tools:** `ai_search_diagnostic(url)` · `full_seo_audit(url)`
+- **Tools:** `ai_search_diagnostic(url)` · `full_seo_audit(url)` · `get_my_store_audit()`
 
 ## What the tools do
 
-Two tools, same `{ url }` input:
+- **`ai_search_diagnostic(url)`** — audit ANY URL for AI-search readiness only (AEO/GEO/LLMO): how likely ChatGPT, Claude, Perplexity & Google AI are to cite it. ~7 AI-citation signals (FAQ/structured-data/entity schema, citable stats, llms.txt, author/E-E-A-T, OG).
+- **`full_seo_audit(url)`** — crawl-audit ANY URL across the whole SEO surface: the AI-search signals **plus** on-page SEO (title, meta, headings, content), technical SEO (HTTPS, robots.txt, XML sitemap, canonical, mobile), and — for Shopify stores — product/offer/review/breadcrumb schema + image-alt coverage.
+- **`get_my_store_audit()`** — the API-key owner's OWN connected Shopify store: the deep 12-category report Inxy runs inside the app using the store's real catalog, performance and analytics (far beyond crawling a URL). No `url` argument; requires an API key + a connected store.
 
-- **`ai_search_diagnostic`** — AEO/GEO/LLMO score: how likely AI search (ChatGPT, Claude, Perplexity, Google AI) is to cite the page. Checks FAQ schema, structured data, citable stats, llms.txt, author/E-E-A-T.
-- **`full_seo_audit`** — a comprehensive crawl audit: the AI-search signals **plus** on-page SEO (title, meta, headings, content), technical SEO (HTTPS, robots.txt, XML sitemap, canonical, mobile), and — for Shopify stores — product/offer/review/breadcrumb schema + image-alt coverage.
-
-Each returns a **0–100 score** plus the top issues to fix:
+The first two return a **weighted 0–100 score** plus the top issues to fix:
 
 - 12 universal AEO/GEO/LLMO checks (FAQ/structured-data/headings/llms.txt/meta/title/canonical/author/content depth/viewport/OG/citable stats).
 - **Shopify deep-dive** — when a Shopify store is detected, 5 extra store-specific checks (Product / Offer / Review / Breadcrumb schema + product image alt coverage).
