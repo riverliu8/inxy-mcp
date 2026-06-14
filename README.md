@@ -1,4 +1,4 @@
-# Inxy SEO Audit — MCP Server
+# Inxy.ai SEO Audit — MCP Server
 
 [![Inxy](https://img.shields.io/badge/by-inxy.ai-6366f1)](https://inxy.ai)
 
@@ -61,9 +61,9 @@ curl -s https://inxy.ai/api/mcp \
   -d '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"audit_seo","arguments":{"url":"https://example.com"}}}'
 ```
 
-## About Inxy
+## About Inxy.ai
 
-[Inxy](https://inxy.ai) is the autonomous AEO/SEO engine for Shopify stores — it doesn't just score your store, it auto-applies every fix and attributes the resulting revenue back to AI search.
+[Inxy.ai](https://inxy.ai) is the autonomous AEO/SEO engine for Shopify stores — it doesn't just score your store, it auto-applies every fix and attributes the resulting revenue back to AI search.
 
 ---
 
