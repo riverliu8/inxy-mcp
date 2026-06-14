@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "ai.inxy/seo-audit",
+  "description": "Score any website or Shopify store for AEO/GEO/LLMO readiness — how likely ChatGPT, Claude, Perplexity and Google AI are to cite it. Shopify stores get a deeper, store-specific report.",
+  "version": "1.0.0",
+  "websiteUrl": "https://inxy.ai/mcp",
+  "repository": {
+    "url": "https://github.com/riverliu8/inxy-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://inxy.ai/api/mcp"
+    }
+  ]
+}
